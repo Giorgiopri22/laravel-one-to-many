@@ -44,7 +44,7 @@ class ProjectController extends Controller
                 'name' => 'required|unique:projects',
                 'description' => 'required',
                 'img' => 'nullable|image',
-                'type_id' => 'nullable|exist:types, id'
+                'type_id' => 'nullable|exists:types,id'
             ],
             [
                 'name.required' => 'Il campo name deve essere compilato',
@@ -100,7 +100,7 @@ class ProjectController extends Controller
                 'name' => 'required|unique:projects',
                 'description' => 'required',
                 'img' => 'nullable|image',
-                'type_id' => 'nullable|exists:types,id'
+                'type_id' => 'nullable| exists:types,id'
             ],
             [
                 'name.required' => 'Il campo name deve essere compilato',
